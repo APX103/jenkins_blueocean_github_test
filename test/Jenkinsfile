@@ -13,7 +13,7 @@ pytest --alluredir=./allure-results'''
   }
   post { 
     always { 
-       allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+       allure includeProperties: false, jdk: '', results: [[path: 'pytest_demo_2/allure-results']]
     }
   }
 }
