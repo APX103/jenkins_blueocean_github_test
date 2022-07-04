@@ -3,8 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh '''pwd
-cd pytest_demo
+        sh '''cd pytest_demo
 source /home/PJLAB/lijialun/.venv/bin/activate
 pytest --alluredir=./allure-results'''
       }
